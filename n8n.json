@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -384,
+        -16
+      ],
+      "id": "7c0875f9-9e96-4132-8b38-289197ec1340",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "cityName": "Warsaw",
+        "language": "pl"
+      },
+      "type": "n8n-nodes-base.openWeatherMap",
+      "typeVersion": 1,
+      "position": [
+        -32,
+        -16
+      ],
+      "id": "853fdff9-520d-4568-acad-c7566fe077a5",
+      "name": "OpenWeatherMap",
+      "credentials": {
+        "openWeatherMapApi": {
+          "id": "fbmvVvO43FqUbUSn",
+          "name": "OpenWeatherMap account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "OpenWeatherMap",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "fc1ba0345969f7228871df9e64b3b47e4f43ee33b19ce42717b44162e39dba6e"
+  }
+}
