@@ -56,7 +56,9 @@
       "parameters": {
         "chatId": "={{ $json.id_chat }}",
         "text": "={{ $('Code in JavaScript').item.json.message }}",
-        "additionalFields": {}
+        "additionalFields": {
+          "appendAttribution": false
+        }
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
