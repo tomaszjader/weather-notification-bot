@@ -5,7 +5,7 @@
         "rule": {
           "interval": [
             {
-              "triggerAtHour": 8
+              "triggerAtHour": 7
             }
           ]
         }
